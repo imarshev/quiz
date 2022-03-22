@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<questions>
+  <question question = "Сколько байт в килобайте?" points = "5" right_answer = "1024" answer2 = "256" answer3 = "512"
+  answer4 = "2028">
+  </question>
+
+  <question question = "В каком году Гагарин полетел в космос?" points = "3" right_answer = "1961" answer2 = "1953" answer3 = "1964"
+  answer4 = "1951">
+  </question>
+
+  <question question = "Сколько дней в високосном году?" points = "4" right_answer = "366" answer2 = "365" answer3 = "367"
+  answer4 = "364">
+  </question>
+
+  <question question = "На какое число делить нельзя?" points = "4" right_answer = "0" answer2 = "отрицательное" answer3 = "нечетное"
+  answer4 = "666">
+  </question>
+
+  <question question = "Год крещения Руси?" points = "2" right_answer = "988" answer2 = "1015" answer3 = "1347"
+  answer4 = "852">
+  </question>
+
+  <question question = "Когда началась вторая мировая война?" points = "6" right_answer = "1 сентября 1939" answer2 = "Что?" answer3 = "1941"
+  answer4 = "Расскажу, когда была волынская резня">
+  </question>
+
+    <question question = "Сколько кругов ада по Данте?" points = "5" right_answer = "9" answer2 = "6" answer3 = "5"
+  answer4 = "7">
+  </question>
+</questions>
