@@ -1,5 +1,6 @@
 class Quiz
   attr_reader :correct_answers, :user_score
+
   def initialize(questions)
     @questions = questions
     @correct_answers = 0
@@ -33,7 +34,21 @@ class Quiz
   end
 
   def score
-    "Правильных ответов: #{@correct_answers} из 5" + "\n" +
-    "Вы набрали #{@user_score} #{Inclination.incline("балл", @user_score)}"
+    <<-SCORE
+Правильных ответов: #{@correct_answers} из #{@questions.size}
+Вы набрали #{@user_score} #{Inclination.incline("балл", @user_score)}
+    SCORE
+  end
+
+  def timer_start
+     @t1 = Time.now
+  end
+
+  def timer_stop
+    @t2 = Time.now
+  end
+
+  def timer_overdue?
+    @t2 - @t1 > 10
   end
 end
