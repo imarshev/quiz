@@ -16,8 +16,13 @@ class Quiz
     @questions[@current_question].to_s
   end
 
-  def right_answer?(users_answer)
-    @questions[@current_question].right_answer?(users_answer)
+  def check_answer(users_answer)
+    if @questions[@current_question].right_answer?(users_answer)
+      add_points
+      "Верно ✅"
+    else
+      "Неверно ❌ Правильный ответ: #{correct_answer}"
+    end
   end
 
   def add_points
@@ -38,17 +43,5 @@ class Quiz
 Правильных ответов: #{@correct_answers} из #{@questions.size}
 Вы набрали #{@user_score} #{Inclination.incline("балл", @user_score)}
     SCORE
-  end
-
-  def timer_start
-     @t1 = Time.now
-  end
-
-  def timer_stop
-    @t2 = Time.now
-  end
-
-  def timer_overdue?
-    @t2 - @t1 > 10
   end
 end
