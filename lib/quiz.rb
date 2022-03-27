@@ -39,8 +39,8 @@ class Quiz
   end
 
   def score
-    <<-SCORE
-Правильных ответов: #{@correct_answers} из #{@questions.size}
+    <<~SCORE
+      Правильных ответов: #{@correct_answers} из #{@questions.size}
 Вы набрали #{@user_score} #{Inclination.incline("балл", @user_score)}
     SCORE
   end
