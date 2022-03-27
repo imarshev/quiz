@@ -23,5 +23,5 @@ $ cd quiz
 ```
 3. Запустите программу:
 ```
-$ ruby main.rb
+$ bundle exec ruby main.rb
 ```
