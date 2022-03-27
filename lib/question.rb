@@ -15,9 +15,9 @@ class Question
   end
 
   def to_s
-    <<-QUESTION
-#{@question} (#{@points} #{Inclination.incline("балл", @points)})
-#{@answer_options.map.with_index(1) { |option, i| "#{i}. #{option}"}.join("\n")}
+    <<~QUESTION
+      #{@question} (#{@points} #{Inclination.incline("балл", @points)})
+      #{@answer_options.map.with_index(1) { |option, i| "#{i}. #{option}"}.join("\n")}
     QUESTION
   end
 end

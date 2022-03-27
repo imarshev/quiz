@@ -5,7 +5,7 @@ module QuestionParser
   module_function
   def get(path, number)
     doc = REXML::Document.new(File.read(File.join(__dir__, "..", path)))
-    @questions = doc.elements.collect("questions/question") do |question|
+    @questions = doc.get_elements("questions/question").map do |question|
       Question.new(
         question["question"],
         question["right_answer"],
