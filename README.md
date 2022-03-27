@@ -25,5 +25,3 @@ $ cd quiz
 ```
 $ ruby main.rb
 ```
-
-### [To the top](https://github.com/imarshev/quiz#quiz)
